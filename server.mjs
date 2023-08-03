@@ -12,7 +12,7 @@ const productsCollection = database.collection('products');
 
 const app = express();
 app.use(express.json());
-app.use(cors(["http://localhost:3000", "https://clean-fish-sweatpants.cyclic.cloud"]));
+app.use(cors(["http://localhost:3000", "https://clean-fish-sweatpants.cyclic.cloud/products"]));
 app.use(morgan('combined'));
 
 

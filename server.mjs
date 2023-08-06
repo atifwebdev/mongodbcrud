@@ -24,8 +24,8 @@ app.get("/", (req, res) => {
 
 // Get All Products
 app.get("/products", async (req, res) =>{
-    const getAllProducts = productsCollection.find({});
     try{
+        const getAllProducts = productsCollection.find({});
         const arrProducts = await getAllProducts.toArray();
         res.send({
             message: "all products",
